@@ -145,14 +145,16 @@ function App() {
             <li>
               <p className="text-xl mb-1">Conchita Salsiccia</p>
               <p className="text-base opacity-70 mb-2">
-                Hvid, salcissia, grillet aubergine, basilikum, ugudelige mængder
+                Hvid, grillet aubergine, basilikum,{" "}
+                <strong> ugudelige mængder</strong>
                 parmesan
               </p>
             </li>
             <li>
               <p className="text-xl mb-1">Conchita con Salsiccia (v)</p>
               <p className="text-base opacity-70 mb-2">
-                Hvid, grillet aubergine, basilikum, <strong>mere</strong>{" "}
+                Hvid, grillet aubergine, basilikum,{" "}
+                <strong> ugudelige mængder</strong>
                 parmesan
               </p>
             </li>
