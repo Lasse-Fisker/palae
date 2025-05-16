@@ -1,6 +1,5 @@
 import "./App.css";
 import palae from "./palae.png";
-import disco from "./disco.jpg";
 
 const Map = () => (
   <svg
