@@ -1,5 +1,6 @@
 import "./App.css";
 import palae from "./palae.png";
+import disco from "./disco.jpg";
 
 const Map = () => (
   <svg
@@ -57,124 +58,139 @@ const Date = () => (
 
 function App() {
   return (
-    <div className="w-full min-h-screen bg-white flex flex-col xl:flex-row overflow-hidden">
-      {/* Left Panel */}
-      <div
-        className="w-full xl:w-[50%] flex flex-col justify-center items-center gap-16 px-6 py-12"
-        style={{ backgroundImage: `url(${palae})`, backgroundSize: "cover" }}
-      >
-        <div className="flex flex-col justify-start items-center text-center gap-2">
-          <h1 className="max-xl:mt-32 text-8xl xl:text-9xl font-['Aguafina_Script'] text-black">
-            Palæet
-          </h1>
-          <p className="text-4xl xl:text-3xl font-['Jacques_Francois'] text-black/70">
-            Åbner dørene for
+    <>
+      <div className="w-full flex gap-2 items-center p-10 bg-amber-300">
+        <div className="flex flex-col">
+          <h2 className="text-5xl font-black text-red-900 animate-pulse">
+            BREAKING!
+          </h2>
+          <p className="text-2xl">
+            🪩🪩🪩 Palæet har specielt til lejligheden arrangeret dansk deltagelse
+            ved Eurovision finalen! <br /> Eksklusivt show venter udvalgte
+            gæster!! 🪩🪩🪩
           </p>
-        </div>
-
-        <div className="text-6xl xl:text-6xl leading-[130%] font-['Aguafina_Script'] text-black text-center">
-          EuroVision
-          <br />
-          Extravaganza
-        </div>
-
-        <div className="w-full max-w-[380px] flex flex-col gap-12">
-          <div className="flex items-center gap-4">
-            <div className="w-12 h-12 relative">
-              <Map />
-            </div>
-            <p className="text-2xl font-['Jacques_Francois'] text-black/70">
-              17. Maj
-            </p>
-          </div>
-
-          <div className="flex items-start gap-4">
-            <div className="w-9 h-9 relative">
-              <Date />
-            </div>
-            <p className="text-2xl font-['Jacques_Francois'] text-black/70">
-              Palæet på Silkeborgvej 781a
-              <br />
-              8210 Brabrand
-            </p>
-          </div>
         </div>
       </div>
 
-      {/* Right Panel */}
-      <div className="w-full xl:w-[50%] flex flex-col items-center px-6 py-12 bg-red-100 xl:overflow-y-auto xl:max-h-screen">
-        <div className="max-w-xl xl:mt-60 w-full text-black text-lg font-['Jacques_Francois'] leading-relaxed whitespace-pre-line">
-          <h2 className="text-4xl mb-8 font-['Jacques_Francois'] ">
-            Aftenens program
-          </h2>
-          Kl 17: Pizzabageri og hvidvin på terrassen. <br />
-          <br />
-          Kl 18: Pizza og The Story of Fire Saga (eurovision-filmen) <br />
-          <br />
-          Kl 21: Eurovision 2025, finale show. <br />
-          <br />
-          I dagens anledning byder Palæ-baren på to helt særlige cocktails.
-          Nemlig: Queer Fantasy🇨🇭& Sauna Gus🇸🇪
-          <br />
-          <br />
-          Medbring eventuelt selv en snack eller en cocktail inspireret af en
-          sang, hvis du vil være gæstebartender i løbet af aftenen🍸🍹🧉
-          <br />
-          <br />
-          Kom glad: med eller uden glimmer, palietter, fjer og laksko🪩✨
-          <br />
-          <br />
-          Får man en tand for meget af politisk apolitik, balkanballader og etno
-          pop kan man fortrække til Eurovision-fri-zone i palæet
-          vinkælder🚫🪩🚫🍷
-          <br />
-          <br />
-          Bus 113 og 11 går lige til døren, men der er også mulighed for
-          overnatning🥳
+      <div className="w-full min-h-screen bg-white flex flex-col xl:flex-row overflow-hidden">
+        {/* Left Panel */}
+        <div
+          className="w-full xl:w-[50%] flex flex-col justify-center items-center gap-16 px-6 py-12"
+          style={{ backgroundImage: `url(${palae})`, backgroundSize: "cover" }}
+        >
+          <div className="flex flex-col justify-start items-center text-center gap-2">
+            <h1 className="max-xl:mt-32 text-8xl xl:text-9xl font-['Aguafina_Script'] text-black">
+              Palæet
+            </h1>
+            <p className="text-4xl xl:text-3xl font-['Jacques_Francois'] text-black/70">
+              Åbner dørene for
+            </p>
+          </div>
+
+          <div className="text-6xl xl:text-6xl leading-[130%] font-['Aguafina_Script'] text-black text-center">
+            EuroVision
+            <br />
+            Extravaganza
+          </div>
+
+          <div className="w-full max-w-[380px] flex flex-col gap-12">
+            <div className="flex items-center gap-4">
+              <div className="w-12 h-12 relative">
+                <Date />
+              </div>
+              <p className="text-2xl font-['Jacques_Francois'] text-black/70">
+                17. Maj
+              </p>
+            </div>
+
+            <div className="flex items-start gap-4">
+              <div className="w-9 h-9 relative">
+                <Map />
+              </div>
+              <p className="text-2xl font-['Jacques_Francois'] text-black/70">
+                Palæet på Silkeborgvej 781a
+                <br />
+                8210 Brabrand
+              </p>
+            </div>
+          </div>
         </div>
-        <div className="max-w-xl w-full gap-2 my-14 text-black text-lg font-['Jacques_Francois'] leading-relaxed whitespace-pre-line">
-          <h2 className="text-4xl mb-8 font-['Jacques_Francois'] ">
-            Køkkenet byder på
-          </h2>
-          <p>Friskbagte napolitanske pizzaer direkte fra spade til bord.</p>
-          <p className="mb-6">
-            Alle pizzaer serveres med vores blanding af{" "}
-            <i>parmesan, grana padano os fior de latte mozzarella</i>
-          </p>
-          <ul className="list-disc gap-6 felx flex-col">
-            <li>
-              <p className="text-xl mb-1">Conchita Salsiccia</p>
-              <p className="text-base opacity-70 mb-2">
-                Hvid, grillet aubergine, basilikum,{" "}
-                <strong> ugudelige mængder</strong>
-                parmesan
-              </p>
-            </li>
-            <li>
-              <p className="text-xl mb-1">Conchita con Salsiccia (v)</p>
-              <p className="text-base opacity-70 mb-2">
-                Hvid, grillet aubergine, basilikum,{" "}
-                <strong> ugudelige mængder</strong>
-                parmesan
-              </p>
-            </li>
-            <li>
-              <p className="text-xl mb-1">Hard Rock Margarita</p>
-              <p className="text-base opacity-70 mb-2">
-                Hvid, grubelagret vesterhavsost, olivenolie, cherrytomat
-              </p>
-            </li>
-            <li>
-              <p className="text-xl mb-1">‘Nduria</p>
-              <p className="text-base opacity-70 mb-2">
-                Rød, ventricina salami, Nduja, basilikum. Honning kan tilvælges
-                efter bagning
-              </p>
-            </li>
-          </ul>
+
+        {/* Right Panel */}
+        <div className="w-full xl:w-[50%] flex flex-col items-center px-6 py-12 bg-red-100 xl:overflow-y-auto xl:max-h-screen">
+          <div className="max-w-xl xl:mt-60 w-full text-black text-lg font-['Jacques_Francois'] leading-relaxed whitespace-pre-line">
+            <h2 className="text-4xl mb-8 font-['Jacques_Francois'] ">
+              Aftenens program
+            </h2>
+            Kl 17: Pizzabageri og hvidvin på terrassen. <br />
+            <br />
+            Kl 18: Pizza og The Story of Fire Saga (eurovision-filmen) <br />
+            <br />
+            Kl 21: Eurovision 2025, finale show. <br />
+            <br />
+            I dagens anledning byder Palæ-baren på to helt særlige cocktails.
+            Nemlig: Queer Fantasy🇨🇭& Sauna Gus🇸🇪
+            <br />
+            <br />
+            Medbring eventuelt selv en snack eller en cocktail inspireret af en
+            sang, hvis du vil være gæstebartender i løbet af aftenen🍸🍹🧉
+            <br />
+            <br />
+            Kom glad: med eller uden glimmer, palietter, fjer og laksko🪩✨
+            <br />
+            <br />
+            Får man en tand for meget af politisk apolitik, balkanballader og
+            etno pop kan man fortrække til Eurovision-fri-zone i palæet
+            vinkælder🚫🪩🚫🍷
+            <br />
+            <br />
+            Bus 113 og 11 går lige til døren, men der er også mulighed for
+            overnatning🥳
+          </div>
+          <div className="max-w-xl w-full gap-2 my-14 text-black text-lg font-['Jacques_Francois'] leading-relaxed whitespace-pre-line">
+            <h2 className="text-4xl mb-8 font-['Jacques_Francois'] ">
+              Køkkenet byder på
+            </h2>
+            <p>Friskbagte napolitanske pizzaer direkte fra spade til bord.</p>
+            <p className="mb-6">
+              Alle pizzaer serveres med vores blanding af{" "}
+              <i>parmesan, grana padano os fior de latte mozzarella</i>
+            </p>
+            <ul className="list-disc gap-6 felx flex-col">
+              <li>
+                <p className="text-xl mb-1">Conchita Salsiccia</p>
+                <p className="text-base opacity-70 mb-2">
+                  Hvid, grillet aubergine, basilikum,{" "}
+                  <strong> ugudelige mængder</strong>
+                  parmesan
+                </p>
+              </li>
+              <li>
+                <p className="text-xl mb-1">Conchita con Salsiccia (v)</p>
+                <p className="text-base opacity-70 mb-2">
+                  Hvid, grillet aubergine, basilikum,{" "}
+                  <strong> ugudelige mængder</strong>
+                  parmesan
+                </p>
+              </li>
+              <li>
+                <p className="text-xl mb-1">Hard Rock Margarita</p>
+                <p className="text-base opacity-70 mb-2">
+                  Hvid, grubelagret vesterhavsost, olivenolie, cherrytomat
+                </p>
+              </li>
+              <li>
+                <p className="text-xl mb-1">‘Nduria</p>
+                <p className="text-base opacity-70 mb-2">
+                  Rød, ventricina salami, Nduja, basilikum. Honning kan
+                  tilvælges efter bagning
+                </p>
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
-    </div>
+    </>
   );
 }
 
