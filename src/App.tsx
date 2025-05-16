@@ -159,13 +159,13 @@ function App() {
               <li>
                 <p className="text-xl mb-1">Conchita Salsiccia</p>
                 <p className="text-base opacity-70 mb-2">
-                  Hvid, grillet aubergine, basilikum,{" "}
+                  Hvid, salsiccia, grillet aubergine, basilikum,{" "}
                   <strong> ugudelige mængder</strong>
                   parmesan
                 </p>
               </li>
               <li>
-                <p className="text-xl mb-1">Conchita con Salsiccia (v)</p>
+                <p className="text-xl mb-1">Conchita con Salsiccia</p>
                 <p className="text-base opacity-70 mb-2">
                   Hvid, grillet aubergine, basilikum,{" "}
                   <strong> ugudelige mængder</strong>
@@ -181,8 +181,8 @@ function App() {
               <li>
                 <p className="text-xl mb-1">‘Nduria</p>
                 <p className="text-base opacity-70 mb-2">
-                  Rød, ventricina salami, Nduja, basilikum. Honning kan
-                  tilvælges efter bagning
+                  Rød, ventricina salami, salcissia, Nduja, basilikum. Honning
+                  kan tilvælges efter bagning
                 </p>
               </li>
             </ul>
