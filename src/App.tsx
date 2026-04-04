@@ -1,4 +1,4 @@
-import { type ReactNode } from "react";
+import { useRef, useEffect, useState, type ReactNode } from "react";
 import "./App.css";
 import palae from "./palae.png";
 import church from "./Illustrationer/Tag2.png";
@@ -62,9 +62,33 @@ const Section = ({
   title: string;
   children: ReactNode;
 }) => {
+  const ref = useRef<HTMLElement>(null);
+  const [isVisible, setIsVisible] = useState(false);
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          setIsVisible(true);
+          observer.unobserve(entry.target);
+        }
+      },
+      { threshold: 0.15 },
+    );
+    if (ref.current) observer.observe(ref.current);
+    return () => observer.disconnect();
+  }, []);
+
   return (
-    <section className="flex flex-col gap-4">
+    <section
+      ref={ref}
+      className={clsx(
+        "flex flex-col gap-4 transition-all duration-700 ease-out",
+        isVisible ? "translate-y-0 opacity-100" : "translate-y-6 opacity-0",
+      )}
+    >
       <h2 className="font-display text-4xl">{title}</h2>
+      <div className="from-gold/60 to-gold/0 h-[1.5px] w-20 bg-gradient-to-r" />
       {children}
     </section>
   );
