@@ -147,7 +147,7 @@ function App() {
               <li>
                 <a
                   target="_blank"
-                  href="https://l.facebook.com/l.php?u=https%3A%2F%2Fmaps.app.goo.gl%2FoJ7fAUdtVQi5bHpK6%3Fg_st%3Dic%26fbclid%3DIwZXh0bgNhZW0CMTAAYnJpZBEwZWhtdXZxb3ZwSEhOcVVCc3NydGMGYXBwX2lkEDIyMjAzOTE3ODgyMDA4OTIAAR4OvuQPPteRShp3sagiy_ZiScmGLZlcW2E_ZYAkU4wW_HbLrTS2g3PsEXUUpw_aem_4ZyhpBOMDulj1yBWMYbPow&h=AT7uLtknvRRmYa2VDcAdaqaWmgffZyokMV7c82jbEC9y6yO9M4M-0BOQo8TSh8_defrQv4KSYvOEh4v1vWc09X8jw3MfoUh-7JmURe-RJ7hBMNDc0GpwFEka2zEHJMkPxRXW4wR9"
+                  href="https://maps.app.goo.gl/oJ7fAUdtVQi5bHpK6?g_st=ic"
                   className="text-accent font-bold underline underline-offset-2"
                 >
                   Kirkens parkering
@@ -165,7 +165,7 @@ function App() {
               <li>
                 <a
                   target="_blank"
-                  href="https://l.facebook.com/l.php?u=https%3A%2F%2Fmaps.app.goo.gl%2FMSRJVrVaaTt8wfqv7%3Fg_st%3Dic%26fbclid%3DIwZXh0bgNhZW0CMTAAYnJpZBEwZWhtdXZxb3ZwSEhOcVVCc3NydGMGYXBwX2lkEDIyMjAzOTE3ODgyMDA4OTIAAR4dqKtzGLh_KSAsZAIPg7Esg7MVHF070VViStrvAP6VrAMZRlXFcec_urfguQ_aem_o7Mt9vrafjyYjHD4yUW_hw&h=AT7uLtknvRRmYa2VDcAdaqaWmgffZyokMV7c82jbEC9y6yO9M4M-0BOQo8TSh8_defrQv4KSYvOEh4v1vWc09X8jw3MfoUh-7JmURe-RJ7hBMNDc0GpwFEka2zEHJMkPxRXW4wR9"
+                  href="https://maps.app.goo.gl/MSRJVrVaaTt8wfqv7?g_st=ic"
                   className="text-accent font-bold underline underline-offset-2"
                 >
                   Årslev Markvej (bag palæet)
