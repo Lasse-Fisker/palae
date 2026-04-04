@@ -269,8 +269,9 @@ function App() {
             oprettet en ønskesky til inspiration.
             <br />
             <a
-              href="https://onskeskyen.dk/da/"
+              href="https://onskeskyen.dk/da/wishlists/gAFrz3NkRLgVrTIS?sharedBy=W5Rt6agPZZZmR7uM&utm_source=shortlink&utm_id=epsz0d"
               className="text-accent font-bold underline underline-offset-2"
+              target="_blank"
             >
               Se ønskesky
             </a>
