@@ -78,30 +78,6 @@ type Location = {
   address: string;
 };
 
-const locations: Location[] = [
-  {
-    name: "Palæet",
-    lng: 10.06798,
-    lat: 56.15181,
-    img: palace,
-    address: "Silkeborgvej 781a, 8220 Brabrand",
-  },
-  {
-    name: "Sønder Årslev Kirke",
-    lng: 10.07041,
-    lat: 56.15223,
-    img: church,
-    address: "Årslev Kirkevej 4B, 8220 Brabrand",
-  },
-  {
-    name: "Fællesgartneriet i Årslev ",
-    lng: 10.06977,
-    lat: 56.14834,
-    img: garden,
-    address: "Gartnervej 218, 8220 Brabrand",
-  },
-];
-
 function App() {
   return (
     <main className="relative m-20 mx-auto flex flex-col items-center justify-end gap-20 px-12 xl:flex-row">
