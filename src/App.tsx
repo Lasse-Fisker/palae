@@ -1,4 +1,4 @@
-import { useRef, type ReactNode } from "react";
+import { type ReactNode } from "react";
 import "./App.css";
 import palae from "./palae.png";
 import church from "./Illustrationer/Tag2.png";
@@ -8,8 +8,6 @@ import sunflower from "./Illustrationer/Solsikke_hel.png";
 import sunfloweProfile from "./Illustrationer/Solsikke_profil.png";
 import leaf from "./Illustrationer/Solsikkeblad.png";
 import clsx from "clsx";
-import MapBox, { Marker, type MapRef } from "react-map-gl/mapbox";
-import { LngLatBounds } from "mapbox-gl";
 import "mapbox-gl/dist/mapbox-gl.css";
 
 const Greeting = ({ mobile = false }: { mobile?: boolean }) => {
@@ -104,61 +102,6 @@ const locations: Location[] = [
   },
 ];
 
-const openGoogleMaps = (address: string) => {
-  const url = `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(
-    address,
-  )}`;
-  window.open(url, "_blank");
-};
-
-const Map = () => {
-  const mapRef = useRef<MapRef>(null);
-
-  const handleLoad = () => {
-    const bounds = new LngLatBounds();
-
-    locations.forEach((l) => bounds.extend([l.lng, l.lat]));
-
-    mapRef.current?.fitBounds(bounds, {
-      padding: 80,
-      duration: 100,
-    });
-  };
-
-  return (
-    <div className="border-main relative aspect-[4/3] w-full overflow-hidden rounded-lg rounded-b-md border-2 border-solid xl:w-1/2">
-      <MapBox
-        ref={mapRef}
-        onLoad={handleLoad}
-        mapboxAccessToken={import.meta.env.VITE_MAPBOX_TOKEN}
-        initialViewState={{
-          longitude: 10.06913,
-          latitude: 56.15182,
-          zoom: 14,
-        }}
-        style={{ width: "100%", height: "100%" }}
-        mapStyle="mapbox://styles/minifisker/ckywxlsf7001114po4aoc97qq"
-      >
-        {locations.map((loc) => (
-          <Marker
-            key={loc.name}
-            anchor="center"
-            latitude={loc.lat}
-            longitude={loc.lng}
-          >
-            <button
-              className="bg-accent/25 hover:bg-accent/45 cursor-pointer rounded-full transition-all hover:shadow-md"
-              onClick={() => openGoogleMaps(loc.address)}
-            >
-              <img className="h-auto w-10 scale-200" src={loc.img} />
-            </button>
-          </Marker>
-        ))}
-      </MapBox>
-    </div>
-  );
-};
-
 function App() {
   return (
     <main className="relative m-20 mx-auto flex flex-col items-center justify-end gap-20 px-12 xl:flex-row">
@@ -216,7 +159,7 @@ function App() {
                   href="https://maps.app.goo.gl/cFV8SZVytiGMd2Vs7?g_st=ic"
                   className="text-accent font-bold underline underline-offset-2"
                 >
-                  Duelandsvej (parallelt med Silkeborgvej
+                  Duelandsvej (parallelt med Silkeborgvej)
                 </a>
               </li>
               <li>
@@ -269,7 +212,7 @@ function App() {
             oprettet en ønskesky til inspiration.
             <br />
             <a
-              href="https://onskeskyen.dk/da/wishlists/gAFrz3NkRLgVrTIS?sharedBy=W5Rt6agPZZZmR7uM&utm_source=shortlink&utm_id=epsz0d"
+              href="https://l.facebook.com/l.php?u=https%3A%2F%2Fonskeskyen.dk%2Fs%2Fepsz5b%3Ffbclid%3DIwZXh0bgNhZW0CMTAAYnJpZBEwZWhtdXZxb3ZwSEhOcVVCc3NydGMGYXBwX2lkEDIyMjAzOTE3ODgyMDA4OTIAAR4OvuQPPteRShp3sagiy_ZiScmGLZlcW2E_ZYAkU4wW_HbLrTS2g3PsEXUUpw_aem_4ZyhpBOMDulj1yBWMYbPow&h=AT78lr3BLNgyQ7zux7XwMu74TekrQWKlx0DuzJDL2-yHlu6Q0XSRsZQwR2mksOkrHY4gSxEhqzvmX7b591nt477FAcSPq-6KydpbN7NYBcCmyifJ0kpxlVX_nHLQ"
               className="text-accent font-bold underline underline-offset-2"
               target="_blank"
             >
