@@ -3,7 +3,6 @@ import "./App.css";
 import palae from "./palae.png";
 import church from "./Illustrationer/Tag2.png";
 import garden from "./Illustrationer/Tag3.png";
-import palace from "./Illustrationer/Tag1.png";
 import sunflower from "./Illustrationer/Solsikke_hel.png";
 import sunfloweProfile from "./Illustrationer/Solsikke_profil.png";
 import leaf from "./Illustrationer/Solsikkeblad.png";
@@ -181,8 +180,7 @@ function App() {
               <p>
                 Egnet til havefest og gang på græs og grussti. Efter vielsen går
                 vi 500 meter fra kirken til receptionen i samlet
-                bryllupsprocession. Efter receptionen går vi 500 meter fra haven
-                til vores hjem i Palæet.
+                bryllupsprocession.
               </p>
             </div>
             <div>
@@ -190,9 +188,7 @@ function App() {
               <p>
                 Receptionen holdes under åben himmel, med mulighed for ly i
                 drivhusene og under oversejl. Der vil være mulighed for at gå
-                tur på græs mellem haverne og indenfor i drivhusene. Festen
-                foregår i telt i haven, og det kan blive køligt hen under
-                aftenen.
+                tur på græs mellem haverne og indenfor i drivhusene.
               </p>
             </div>
           </div>
@@ -222,9 +218,8 @@ function App() {
         </Section>
         <Section title="Taler, indslag og spørgsmål">
           <p>
-            Ønsker du/I at holde en tale, eller lave et indslag under
-            bryllupsfesten, bedes du række ud til Anders’ bror Lasse, som er
-            toastmaster på dagen, på{" "}
+            Ønsker du/I at holde en tale, eller lave et indslag, bedes du række
+            ud til Anders’ bror Lasse, som er toastmaster på dagen, på{" "}
             <a
               href="mailto:l.nielsen.fisker@gmail.com"
               className="text-accent font-bold underline underline-offset-2"
@@ -240,11 +235,6 @@ function App() {
         </Section>
         <Section title="Hvor og hvornår?">
           <div className="flex flex-col gap-2">
-            <p>
-              I er inviteret til bryllup d. 22 august 2026. Dagen foregår på tre
-              lokationer; Vielse i Årslev kirke, Reception i Fællesgartneriet og
-              slutteligt bryllupfest i palæet.
-            </p>
             <div className="mt-4 flex w-full flex-col justify-between lg:flex-row">
               <Location
                 img={church}
@@ -257,12 +247,6 @@ Kirkekirkevej 13, 8220"
                 title="Reception kl. 14:30-16:30"
                 subtitle="ved Fællesgartneriet i Årslev
 Gartnervej 218, 8220"
-              />
-              <Location
-                img={palace}
-                title="Bryllupsfest kl. 17:00"
-                subtitle="i Palæet
-Silkeborgvej 781a, 8200"
               />
             </div>
           </div>
